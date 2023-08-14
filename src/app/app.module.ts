@@ -9,6 +9,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { IfElseComponent } from './if-else/if-else.component';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
+import { NestedLoopComponent } from './nested-loop/nested-loop.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ForLoopComponent } from './for-loop/for-loop.component';
     PropertyBindingComponent,
     IfElseComponent,
     SwitchCaseComponent,
-    ForLoopComponent
+    ForLoopComponent,
+    NestedLoopComponent
   ],
   imports: [
     BrowserModule,
