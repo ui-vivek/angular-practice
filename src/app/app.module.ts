@@ -8,6 +8,7 @@ import { InlineTempStyleComponent } from './inline-temp-style/inline-temp-style.
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { IfElseComponent } from './if-else/if-else.component';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
+import { ForLoopComponent } from './for-loop/for-loop.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SwitchCaseComponent } from './switch-case/switch-case.component';
     InlineTempStyleComponent,
     PropertyBindingComponent,
     IfElseComponent,
-    SwitchCaseComponent
+    SwitchCaseComponent,
+    ForLoopComponent
   ],
   imports: [
     BrowserModule,
