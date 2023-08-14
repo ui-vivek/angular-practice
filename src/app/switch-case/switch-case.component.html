@@ -1,0 +1,41 @@
+<p>switch-case works!</p>
+<!-- ================================================= Way One -->
+<!-- <div [ngSwitch]="case">
+    <h1 *ngSwitchCase="1">Case 1</h1>
+    <h1 *ngSwitchCase="2">Case 2</h1>
+</div> -->
+<!-- ================================================= Way Two -->
+<ng-container [ngSwitch]="case">
+    <!-- we can check as string  -->
+    <h1 *ngSwitchCase="'yes'" [ngTemplateOutlet]="caseYes"></h1> 
+    <h1 *ngSwitchCase="'no'" [ngTemplateOutlet]="caseNo"></h1>
+    <!-- we can check as number -->
+    <h1 *ngSwitchCase="1" [ngTemplateOutlet]="case1"></h1>
+    <h1 *ngSwitchCase="2" [ngTemplateOutlet]="case2"></h1>
+    <!-- we can check as booolean -->
+    <h1 *ngSwitchCase="true" [ngTemplateOutlet]="caseTrue"></h1>
+    <h1 *ngSwitchCase="false" [ngTemplateOutlet]="caseFalse"></h1>
+    <h1 *ngSwitchDefault [ngTemplateOutlet]="defaultCase"></h1>
+</ng-container>
+
+<ng-template #caseYes>
+    <h1>case Yes </h1>
+</ng-template>
+<ng-template #caseNo>
+    <h1>case No </h1>
+</ng-template>
+<ng-template #case1>
+    <h1>case 1 </h1>
+</ng-template>
+<ng-template #case2>
+    <h1>case 2 </h1>
+</ng-template>
+<ng-template #caseTrue>
+    <h1>case True</h1>
+</ng-template>
+<ng-template #caseFalse>
+    <h1>case False</h1>
+</ng-template>
+<ng-template #defaultCase>
+    <h1>Default Case</h1>
+</ng-template>

@@ -7,6 +7,7 @@ import { InlineTempelateComponent } from './inline-tempelate/inline-tempelate.co
 import { InlineTempStyleComponent } from './inline-temp-style/inline-temp-style.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { IfElseComponent } from './if-else/if-else.component';
+import { SwitchCaseComponent } from './switch-case/switch-case.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { IfElseComponent } from './if-else/if-else.component';
     InlineTempelateComponent,
     InlineTempStyleComponent,
     PropertyBindingComponent,
-    IfElseComponent
+    IfElseComponent,
+    SwitchCaseComponent
   ],
   imports: [
     BrowserModule,
