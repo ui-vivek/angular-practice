@@ -10,6 +10,7 @@ import { IfElseComponent } from './if-else/if-else.component';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
 import { NestedLoopComponent } from './nested-loop/nested-loop.component';
+import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NestedLoopComponent } from './nested-loop/nested-loop.component';
     IfElseComponent,
     SwitchCaseComponent,
     ForLoopComponent,
-    NestedLoopComponent
+    NestedLoopComponent,
+    DynamicStyleComponent
   ],
   imports: [
     BrowserModule,
