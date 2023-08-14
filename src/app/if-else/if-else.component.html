@@ -1,0 +1,27 @@
+<p>if-else works!</p>
+<button (click)="change()">Change Me</button>
+
+<!-- <h1 *ngIf="isture else bye">WelCome Anular...!</h1>
+<ng-template #bye>
+<h1>Bye Bye React</h1>
+</ng-template> -->
+
+<!-- <ng-template [ngIf]="isture" [ngIfElse]="byeee">
+    <h1>Hye Angular</h1>
+</ng-template>
+
+<ng-template #byeee>
+    <h1>Bye Bye React.js</h1>
+</ng-template> -->
+
+<ng-container *ngIf="isture then forIf else forElse">
+
+</ng-container>
+
+<ng-template #forIf>
+    <h1>Yes ...! I am If conditions.</h1>
+</ng-template>
+
+<ng-template #forElse>
+    <h1>Yes ...! I am Else conditions.</h1>
+</ng-template>
