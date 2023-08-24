@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-to-do-list',
@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./to-do-list.component.css'],
 })
 export class ToDoListComponent {
+  @Input() item = 0;
   list: any[] = [];
   getData(item: any) {
     this.list.push({ id: this.list.length, name: item });
   }
-  deleteItem(id:number){
-    this.list=this.list.filter(item=>item.id!==id)
+  deleteItem(id: number) {
+    this.list = this.list.filter((item) => item.id !== id);
   }
 }
