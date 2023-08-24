@@ -11,6 +11,8 @@ import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
 import { NestedLoopComponent } from './nested-loop/nested-loop.component';
 import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
+import { FormComponent } from './form/form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,11 @@ import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
     SwitchCaseComponent,
     ForLoopComponent,
     NestedLoopComponent,
-    DynamicStyleComponent
+    DynamicStyleComponent,
+    FormComponent,
   ],
-  imports: [
-    BrowserModule,
-    
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

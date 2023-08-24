@@ -1,0 +1,10 @@
+<form #myForm="ngForm" (ngSubmit)="displayData(myForm.value)">
+    <input type="text" ngModel name="name" id="" placeholder="enter name">
+    <br><br>
+    <input type="text" ngModel name="email" id="" placeholder="enter name">
+    <br><br>
+    <input type="text" ngModel name="pass" id="" placeholder="enter name">
+    <br><br>
+    <button>Submit</button>
+</form>
+<p>{{datas.name}}</p>
