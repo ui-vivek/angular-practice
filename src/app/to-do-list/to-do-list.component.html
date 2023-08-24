@@ -1,0 +1,7 @@
+<p>to-do-list works!</p>
+<input #listIteam ngModel type="text" name="name" placeholder="enter your name">
+<button (click)="getData(listIteam.value)">Add To List</button>
+
+<ul *ngFor="let item of list">
+    <li>{{item.name}} <button (click)="deleteItem(item.id)">Delete</button></li>
+</ul>

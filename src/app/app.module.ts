@@ -13,6 +13,10 @@ import { NestedLoopComponent } from './nested-loop/nested-loop.component';
 import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonModule } from '@angular/material/button';
+import { ToDoListComponent } from './to-do-list/to-do-list.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +31,15 @@ import { FormsModule } from '@angular/forms';
     NestedLoopComponent,
     DynamicStyleComponent,
     FormComponent,
+    ToDoListComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatButtonModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
