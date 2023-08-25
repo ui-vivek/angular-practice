@@ -18,6 +18,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { ParentComponent } from './parent/parent.component';
+import { DataShearingModule } from './data-shearing/data-shearing.module';
 
 @NgModule({
   declarations: [
@@ -34,13 +36,15 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
     FormComponent,
     ToDoListComponent,
     TwoWayBindingComponent,
+    ParentComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatButtonModule
+    MatButtonModule,
+    DataShearingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
