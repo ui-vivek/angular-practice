@@ -20,6 +20,7 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { ParentComponent } from './parent/parent.component';
 import { DataShearingModule } from './data-shearing/data-shearing.module';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { DataShearingModule } from './data-shearing/data-shearing.module';
     ToDoListComponent,
     TwoWayBindingComponent,
     ParentComponent,
+    PipesComponent,
   ],
   imports: [
     BrowserModule,
