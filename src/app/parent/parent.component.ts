@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
   currentItem = "This is the parent data pass to the child component"
+  items = ['item1', 'item2', 'item3', 'item4'];
+
+  addItem(newItem: string) {
+    this.items.push(newItem);
+  }
 }
